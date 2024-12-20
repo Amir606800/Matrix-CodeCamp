@@ -1,0 +1,514 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <line x1="20" y1="10" x2="20" y2="90" stroke="black" stroke-width="2"/>
+  <polyline points="20,50 50,30 80,70 110,30 140,70 170,30 200,70 230,50 260,30 290,70 320,50" 
+            stroke="black" stroke-width="2" fill="none"/>
+</svg>
+
+
+[
+  {
+    "id": 1,
+    "name": "Classic Piano",
+    "rating": 4.8,
+    "price": 499.99,
+    "description": "A high-quality classic piano for beginners and professionals.",
+    "category": "Instruments",
+    "stock": 20,
+    "image": "https://usa.yamaha.com/files/Main_Banner_1920px2_c2f932ffadba28e17dd0d1f6ca29dc83.jpg",
+    "audio": "/Assets/audio/piano_plain.mp3"
+  },
+  {
+    "id": 2,
+    "name": "Electric Guitar",
+    "rating": 4.5,
+    "price": 299.99,
+    "description": "A versatile electric guitar suitable for all genres.",
+    "category": "Instruments",
+    "stock": 15,
+    "image": "https://cdn11.bigcommerce.com/s-4hc0jwsnnq/images/stencil/original/products/20743/71733/477671-Eastcoast-L1-Electric-Guitar-Blue-Burst-Body__31522.1723028228.jpg?c=1",
+    "audio": "/Assets/audio/guitar_electric.mp3"
+  },
+  {
+    "id": 3,
+    "name": "Acoustic Guitar",
+    "rating": 4.7,
+    "price": 199.99,
+    "description": "A beautifully crafted acoustic guitar with rich sound.",
+    "category": "Instruments",
+    "stock": 30,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQhxoXCYy5MCa3b_ODqac-AXfTqKSfeYW1w&s",
+    "audio": "/Assets/audio/guitar_acoustic.mp3"
+  },
+  {
+    "id": 4,
+    "name": "Drum Set",
+    "rating": 4.6,
+    "price": 599.99,
+    "description": "Complete drum set with premium hardware and cymbals.",
+    "category": "Instruments",
+    "stock": 10,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVl3QvWQo-Bb1p0yh253QKgTIHPY5x5x4pg&s",
+    "audio": "/Assets/audio/drumset.mp3"
+  },
+  {
+    "id": 5,
+    "name": "Flute",
+    "rating": 4.4,
+    "price": 89.99,
+    "description": "A beginner-friendly flute with a smooth tone.",
+    "category": "Instruments",
+    "stock": 40,
+    "image": "https://3.imimg.com/data3/ST/BY/MY-20262388/designer-flute.jpg",
+    "audio": "/Assets/audio/flute.mp3"
+  },
+  {
+    "id": 6,
+    "name": "Violin",
+    "rating": 4.5,
+    "price": 249.99,
+    "description": "A handcrafted violin for intermediate players.",
+    "category": "Instruments",
+    "stock": 25,
+    "image": "https://phamoxmusic.com/wp-content/uploads/2023/01/The-Violin-Theme-Picture-PIC800.jpg",
+    "audio": "/Assets/audio/violin.mp3"
+  },
+  {
+    "id": 7,
+    "name": "Synthesizer",
+    "rating": 4.8,
+    "price": 749.99,
+    "description": "A professional-grade synthesizer for music production.",
+    "category": "Instruments",
+    "stock": 12,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOkqP1qtTeGl9RcEh7D1Rvyn9fo2MbHXnug&s",
+    "audio": "/Assets/audio/synthesizer.mp3"
+  },
+  {
+    "id": 8,
+    "name": "Bass Guitar",
+    "rating": 4.6,
+    "price": 349.99,
+    "description": "A sleek bass guitar with powerful sound.",
+    "category": "Instruments",
+    "stock": 18,
+    "image": "https://vintageguitarsus.com/cdn/shop/files/VRS450CR_1.jpg?v=1721061312",
+    "audio": "/Assets/audio/guitar_bass.mp3"
+  },
+  {
+    "id": 9,
+    "name": "Microphone",
+    "rating": 4.7,
+    "price": 129.99,
+    "description": "A studio-quality microphone for recording and live performances.",
+    "category": "Gadgets",
+    "stock": 50,
+    "image": "https://nady.com/wp-content/uploads/2020/07//NDY_PCM-200_02-1-scaled-1-350x350.jpg",
+    "audio": ""
+  },
+  {
+    "id": 10,
+    "name": "Headphones",
+    "rating": 4.5,
+    "price": 79.99,
+    "description": "Comfortable headphones with excellent sound clarity.",
+    "category": "Gadgets",
+    "stock": 60,
+    "image": "https://m.media-amazon.com/images/I/81OXsZ21Z4L.jpg",
+    "audio": ""
+  },
+  {
+    "id": 11,
+    "name": "Keyboard",
+    "rating": 4.4,
+    "price": 129.99,
+    "description": "A compact keyboard with customizable keys.",
+    "category": "Gadgets",
+    "stock": 35,
+    "image": "https://www.geeky-gadgets.com/wp-content/uploads/2022/04/PopuPiano-portable-smart-piano.jpg",
+    "audio": ""
+  },
+  {
+    "id": 12,
+    "name": "Audio Mixer",
+    "rating": 4.8,
+    "price": 199.99,
+    "description": "An audio mixer with intuitive controls for sound customization.",
+    "category": "Gadgets",
+    "stock": 20,
+    "image": "https://pyleusa.com/cdn/shop/files/PMXU63BT_bff77653-a09d-4430-8632-1d6fb48a9581_1400x.jpg?v=1712804159",
+    "audio": ""
+  },
+  {
+    "id": 13,
+    "name": "Trumpet",
+    "rating": 4.5,
+    "price": 199.99,
+    "description": "A brass trumpet with excellent tonal quality.",
+    "category": "Instruments",
+    "stock": 22,
+    "image": "https://kesslerandsons.com/wp-content/uploads/solist-student-trumpet-768x768.jpg",
+    "audio": "/Assets/audio/trumpet.mp3"
+  },
+  {
+    "id": 14,
+    "name": "Harmonica",
+    "rating": 4.3,
+    "price": 49.99,
+    "description": "A compact and portable harmonica for enthusiasts.",
+    "category": "Instruments",
+    "stock": 45,
+    "image": "https://cdn.britannica.com/41/144041-050-C6B0D5E7/Harmonica.jpg",
+    "audio": "/Assets/audio/harmonica.mp3"
+  },
+  {
+    "id": 15,
+    "name": "Ukulele",
+    "rating": 4.7,
+    "price": 99.99,
+    "description": "A lightweight ukulele with a cheerful tone.",
+    "category": "Instruments",
+    "stock": 28,
+    "image": "https://www.axiommusic.com.au/assets/full/383.jpg?20221010102945",
+    "audio": "/Assets/audio/ukulele.mp3"
+  },
+  {
+    "id": 16,
+    "name": "DJ Controller",
+    "rating": 4.9,
+    "price": 349.99,
+    "description": "A professional DJ controller for live performances.",
+    "category": "Gadgets",
+    "stock": 10,
+    "image": "https://www.djkit.com/images/products/XDJ-RR_prm_top_A_high_180807.jpg",
+    "audio": ""
+  },
+  {
+    "id": 17,
+    "name": "Amplifier",
+    "rating": 4.6,
+    "price": 199.99,
+    "description": "A high-performance amplifier for enhanced sound.",
+    "category": "Gadgets",
+    "stock": 20,
+    "image": "https://www.precisionaudio.com.au/cdn/shop/files/174C_3_0d7ca9ac-2ea3-4367-a308-ccae63eeb602-564623.jpg?v=1725581696&width=960",
+    "audio": ""
+  },
+  {
+    "id": 18,
+    "name": "Cymbals",
+    "rating": 4.4,
+    "price": 149.99,
+    "description": "Durable and high-quality cymbals for drummers.",
+    "category": "Instruments",
+    "stock": 30,
+    "image": "https://www.paiste.com/en/assets/components/phpthumbof/cache/Signature_Symphonic_Light_20_new_2.1d0ed1a8f01dd31a867252ccc3d93bc0.jpg",
+    "audio": "/Assets/audio/cymbal.mp3"
+  },
+  {
+    "id": 19,
+    "name": "Clarinet",
+    "rating": 4.5,
+    "price": 249.99,
+    "description": "A lightweight clarinet for classical music enthusiasts.",
+    "category": "Instruments",
+    "stock": 18,
+    "image": "https://kesslerandsons.com/wp-content/uploads/solist-student-clarinet-nc-sidetrills-768x768.jpg",
+    "audio": "/Assets/audio/clarinet.mp3"
+  },
+  {
+    "id": 20,
+    "name": "Digital Recorder",
+    "rating": 4.8,
+    "price": 199.99,
+    "description": "A portable digital recorder for capturing high-quality audio.",
+    "category": "Gadgets",
+    "stock": 25,
+    "image": "https://cdn11.bigcommerce.com/s-4hc0jwsnnq/products/5557/images/19662/541297-1__32657.1714821737.386.513.jpg?c=1",
+    "audio": ""
+  }
+]
+
+
+[
+  {
+    "id": 1,
+    "name": "Classic Piano",
+    "rating": 4.8,
+    "price": 499.99,
+    "description": "A high-quality classic piano for beginners and professionals.",
+    "category": "Instruments",
+    "stock": 20,
+    "image": "https://usa.yamaha.com/files/Main_Banner_1920px2_c2f932ffadba28e17dd0d1f6ca29dc83.jpg",
+    "audio": "/Assets/audio/piano_plain.mp3"
+  },
+  {
+    "id": 2,
+    "name": "Electric Guitar",
+    "rating": 4.5,
+    "price": 299.99,
+    "description": "A versatile electric guitar suitable for all genres.",
+    "category": "Instruments",
+    "stock": 15,
+    "image": "https://cdn11.bigcommerce.com/s-4hc0jwsnnq/images/stencil/original/products/20743/71733/477671-Eastcoast-L1-Electric-Guitar-Blue-Burst-Body__31522.1723028228.jpg?c=1",
+    "audio": "/Assets/audio/guitar_electric.mp3"
+  }, 
+  {
+    "id": 3,
+    "name": "Acoustic Guitar",
+    "rating": 4.7,
+    "price": 199.99,
+    "description": "A beautifully crafted acoustic guitar with rich sound.",
+    "category": "Instruments",
+    "stock": 30,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQhxoXCYy5MCa3b_ODqac-AXfTqKSfeYW1w&s",
+    "audio": "/Assets/audio/guitar_acoustic.mp3"
+  },
+  {
+    "id": 4,
+    "name": "Drum Set",
+    "rating": 4.6,
+    "price": 599.99,
+    "description": "Complete drum set with premium hardware and cymbals.",
+    "category": "Instruments",
+    "stock": 10,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVl3QvWQo-Bb1p0yh253QKgTIHPY5x5x4pg&s",
+    "audio": "/Assets/audio/drumset.mp3"
+  },
+  {
+    "id": 5,
+    "name": "Flute",
+    "rating": 4.4,
+    "price": 89.99,
+    "description": "A beginner-friendly flute with a smooth tone.",
+    "category": "Instruments",
+    "stock": 40,
+    "image": "https://3.imimg.com/data3/ST/BY/MY-20262388/designer-flute.jpg",
+    "audio": "/Assets/audio/flute.mp3"
+  },
+  {
+    "id": 6,
+    "name": "Violin",
+    "rating": 4.5,
+    "price": 249.99,
+    "description": "A handcrafted violin for intermediate players.",
+    "category": "Instruments",
+    "stock": 25,
+    "image": "https://phamoxmusic.com/wp-content/uploads/2023/01/The-Violin-Theme-Picture-PIC800.jpg",
+    "audio": "/Assets/audio/violin.mp3"
+  },
+  {
+    "id": 7,
+    "name": "Synthesizer",
+    "rating": 4.8,
+    "price": 749.99,
+    "description": "A professional-grade synthesizer for music production.",
+    "category": "Instruments",
+    "stock": 12,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAOkqP1qtTeGl9RcEh7D1Rvyn9fo2MbHXnug&s",
+    "audio": "/Assets/audio/synthesizer.mp3"
+  },
+  {
+    "id": 8,
+    "name": "Bass Guitar",
+    "rating": 4.6,
+    "price": 349.99,
+    "description": "A sleek bass guitar with powerful sound.",
+    "category": "Instruments",
+    "stock": 18,
+    "image": "https://vintageguitarsus.com/cdn/shop/files/VRS450CR_1.jpg?v=1721061312",
+    "audio": "/Assets/audio/guitar_bass.mp3"
+  },
+  {
+    "id": 13,
+    "name": "Trumpet",
+    "rating": 4.5,
+    "price": 199.99,
+    "description": "A brass trumpet with excellent tonal quality.",
+    "category": "Instruments",
+    "stock": 22,
+    "image": "https://kesslerandsons.com/wp-content/uploads/solist-student-trumpet-768x768.jpg",
+    "audio": "/Assets/audio/trumpet.mp3"
+  },
+  {
+    "id": 14,
+    "name": "Harmonica",
+    "rating": 4.3,
+    "price": 49.99,
+    "description": "A compact and portable harmonica for enthusiasts.",
+    "category": "Instruments",
+    "stock": 45,
+    "image": "https://cdn.britannica.com/41/144041-050-C6B0D5E7/Harmonica.jpg",
+    "audio": "/Assets/audio/harmonica.mp3"
+  },
+  {
+    "id": 15,
+    "name": "Ukulele",
+    "rating": 4.7,
+    "price": 99.99,
+    "description": "A lightweight ukulele with a cheerful tone.",
+    "category": "Instruments",
+    "stock": 28,
+    "image": "https://www.axiommusic.com.au/assets/full/383.jpg?20221010102945",
+    "audio": "/Assets/audio/ukulele.mp3"
+  },
+  {
+    "id": 18,
+    "name": "Cymbals",
+    "rating": 4.4,
+    "price": 149.99,
+    "description": "Durable and high-quality cymbals for drummers.",
+    "category": "Instruments",
+    "stock": 30,
+    "image": "https://www.paiste.com/en/assets/components/phpthumbof/cache/Signature_Symphonic_Light_20_new_2.1d0ed1a8f01dd31a867252ccc3d93bc0.jpg",
+    "audio": "/Assets/audio/cymbal.mp3"
+  },
+  {
+    "id": 19,
+    "name": "Clarinet",
+    "rating": 4.5,
+    "price": 249.99,
+    "description": "A lightweight clarinet for classical music enthusiasts.",
+    "category": "Instruments",
+    "stock": 18,
+    "image": "https://kesslerandsons.com/wp-content/uploads/solist-student-clarinet-nc-sidetrills-768x768.jpg",
+    "audio": "/Assets/audio/clarinet.mp3"
+  }
+]
+
+
+
+
+[
+  {
+    "id": 9,
+    "name": "Microphone",
+    "rating": 4.7,
+    "price": 129.99,
+    "description": "A studio-quality microphone for recording and live performances.",
+    "category": "Gadgets",
+    "stock": 50,
+    "image": "https://nady.com/wp-content/uploads/2020/07//NDY_PCM-200_02-1-scaled-1-350x350.jpg",
+    "audio": ""
+  },
+  {
+    "id": 10,
+    "name": "Headphones",
+    "rating": 4.5,
+    "price": 79.99,
+    "description": "Comfortable headphones with excellent sound clarity.",
+    "category": "Gadgets",
+    "stock": 60,
+    "image": "https://m.media-amazon.com/images/I/81OXsZ21Z4L.jpg",
+    "audio": ""
+  },
+  {
+    "id": 11,
+    "name": "Keyboard",
+    "rating": 4.4,
+    "price": 129.99,
+    "description": "A compact keyboard with customizable keys.",
+    "category": "Gadgets",
+    "stock": 35,
+    "image": "https://www.geeky-gadgets.com/wp-content/uploads/2022/04/PopuPiano-portable-smart-piano.jpg",
+    "audio": ""
+  },
+  {
+    "id": 12,
+    "name": "Audio Mixer",
+    "rating": 4.8,
+    "price": 199.99,
+    "description": "An audio mixer with intuitive controls for sound customization.",
+    "category": "Gadgets",
+    "stock": 20,
+    "image": "https://pyleusa.com/cdn/shop/files/PMXU63BT_bff77653-a09d-4430-8632-1d6fb48a9581_1400x.jpg?v=1712804159",
+    "audio": ""
+  },
+  {
+    "id": 16,
+    "name": "DJ Controller",
+    "rating": 4.9,
+    "price": 349.99,
+    "description": "A professional DJ controller for live performances.",
+    "category": "Gadgets",
+    "stock": 10,
+    "image": "https://www.djkit.com/images/products/XDJ-RR_prm_top_A_high_180807.jpg",
+    "audio": ""
+  },
+  {
+    "id": 17,
+    "name": "Amplifier",
+    "rating": 4.6,
+    "price": 199.99,
+    "description": "A high-performance amplifier for enhanced sound.",
+    "category": "Gadgets",
+    "stock": 20,
+    "image": "https://www.precisionaudio.com.au/cdn/shop/files/174C_3_0d7ca9ac-2ea3-4367-a308-ccae63eeb602-564623.jpg?v=1725581696&width=960",
+    "audio": ""
+  },
+  {
+    "id": 20,
+    "name": "Digital Recorder",
+    "rating": 4.8,
+    "price": 199.99,
+    "description": "A portable digital recorder for capturing high-quality audio.",
+    "category": "Gadgets",
+    "stock": 25,
+    "image": "https://cdn11.bigcommerce.com/s-4hc0jwsnnq/products/5557/images/19662/541297-1__32657.1714821737.386.513.jpg?c=1",
+    "audio": ""
+  },
+  {
+    "id": 21,
+    "name": "Guitar Tuner",
+    "rating": 4.5,
+    "price": 29.99,
+    "description": "A compact and precise tuner for all string instruments.",
+    "category": "Gadgets",
+    "stock": 45,
+    "image": "https://m.media-amazon.com/images/I/41duhgZ9KgL._AC_.jpg",
+    "audio": ""
+  },
+  {
+    "id": 22,
+    "name": "Piano Pedal",
+    "rating": 4.7,
+    "price": 49.99,
+    "description": "A sustain pedal for enhancing piano performances.",
+    "category": "Gadgets",
+    "stock": 30,
+    "image": "https://m.media-amazon.com/images/I/71xIL-QDxvL.jpg",
+    "audio": ""
+  },
+  {
+    "id": 23,
+    "name": "Guitar Strings",
+    "rating": 4.8,
+    "price": 12.99,
+    "description": "Durable and high-quality strings for electric and acoustic guitars.",
+    "category": "Gadgets",
+    "stock": 80,
+    "image": "https://m.media-amazon.com/images/I/71wf2yhYv-L._AC_UF1000,1000_QL80_.jpg",
+    "audio": ""
+  },
+  {
+    "id": 24,
+    "name": "Guitar Pick Set",
+    "rating": 4.6,
+    "price": 9.99,
+    "description": "A set of durable guitar picks in various sizes and materials.",
+    "category": "Gadgets",
+    "stock": 100,
+    "image": "https://rombopicks.com/cdn/shop/products/guitar-pick-set-rombopicks-diamond-coloured_2000x.jpg?v=1616760389",
+    "audio": ""
+  },
+  {
+    "id": 25,
+    "name": "Metronome",
+    "rating": 4.9,
+    "price": 39.99,
+    "description": "A digital metronome to keep perfect time while practicing.",
+    "category": "Gadgets",
+    "stock": 40,
+    "image": "https://www.mclarenspianos.co.uk/wp-content/uploads/2018/02/red-11610_1486722408-700x614-500x438.jpg",
+    "audio": ""
+  },
+]

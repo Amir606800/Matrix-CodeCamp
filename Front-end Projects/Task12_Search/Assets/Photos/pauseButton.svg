@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <circle cx="50" cy="50" r="48" stroke="black" stroke-width="2" fill="none"/>
+  <!-- Pause symbol: two vertical bars -->
+  <rect x="35" y="30" width="10" height="40" fill="black"/>
+  <rect x="55" y="30" width="10" height="40" fill="black"/>
+</svg>
