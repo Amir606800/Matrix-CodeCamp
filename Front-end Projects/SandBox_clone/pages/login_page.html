@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Assets/CSS/login_style.css">
+</head>
+<body>
+    <div class="area">
+        <div class="box">
+            <div class="head" style="margin-bottom: 20px;font-size:40px">Log In</div>
+            <form id="fom" method="post">
+            <div class="email">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="example@text.com" required>
+                <p class="alert-email" style="text-align: start;font-size:19px; margin-top:5px;color:red;"></p>
+            </div>
+            
+            <div class="pass">
+                <label for="password">Password: </label>
+                <div class="passBox">
+                <input type="password" name="passw" id="password" placeholder="xxxxxx">
+                <button type="button" id="butn" style="background: none; border:none;"><img  src="/Assets/Icons/closed-eyes.svg" id="eye" width="60px"></button>
+            </div>
+            <p class="alert-password" style="text-align: start;font-size:19px; margin-top:5px;color:red;"></p>
+            
+            </div>
+            <p style="font-size:19px;text-align:start;">Still don't have an account? <a style="text-decoration: none;" href="/pages/sign_up_page.html">Sign-Up</a></p>
+                <button type="submit" id="login" class="btn"> Log In <span id="xet"></span></button>
+                
+            </form>
+        </div>
+    </div>
+    <script  src="/Assets/JS/login.js"></script>
+    <script src="/Assets/JS/users.js"></script>
+</body>
+</html>

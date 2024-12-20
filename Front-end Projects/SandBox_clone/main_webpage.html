@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<div>
+    <nav class="navbar navbar-dark navbar-expand-md navbar-scroll baa" style="background: linear-gradient(90deg,#a51ddb,rgb(217, 149, 3)  ,#ff3700);">
+        <div class="container">
+            <button type="button" onclick="changeLang()" id="Lang">Aze</button>
+
+            <button type="button" class="lightToggler">
+                <svg id="lightMode" xmlns="http://www.w3.org/2000/svg" style="color:black;" width="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>    
+            </button>
+            <button type="button" class="nightToggler">
+                <svg id="nightMode" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </button>
+        
+            <!-- Regular navbar links for larger screens -->
+            <div class="collapse navbar-collapse justify-content-center d-none d-md-flex" >
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="demos" >Demos</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="pages">Pages</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="projects">Projects</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                            <a href="#" class="dropdown-item">Demo1</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#" style="width: 100%;text-align:center;">
+                <img src="/Assets/Photos/logo-light.png" id="LOL" alt="Logo"  >
+            </a>
+            <!-- Offcanvas navigation for mobile view -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="color: black;">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                        
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="blog">Blog</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="blocks">Blocks</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" id="documentation">Documentation</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                                <a href="#" class="dropdown-item">Demo1</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn  d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" >
+                <span class="navbar-toggler-icon " ></span>
+            </button>
+            <a href="/pages/login_page.html" style="margin-left: 15px;"><button style="width: 70px;" type="button" id="log--in">Log In</button></a>
+
+        </div>
+    </nav>
+    
+
+    <div class="top-main pt-5 baa" style="background: linear-gradient(90deg,#a51dda,  rgb(217, 149, 3),#ff3700);">
+        <div class="container " >
+            <div class="words mx-auto">
+            <div class="head"><h1 id="sol1">We bring solutions to <p>make life easier </p></h1>
+            </div>
+            <div class="creative" id="sol2">
+            We are a creative company that focuses on long <p>term relationship with customers</p>
+        </div>
+        </div>
+        <div class="more-button mx-auto">
+        <button type="button" class="more"> Read More </button>
+    </div>
+    <div class="cardlar mt-5 row">
+        <div class="card1 col">
+            <div class="icon"><i class="fa-solid fa-clipboard"></i></div>
+            <div class="head" id="Content">Content Marketing</div>
+            <div class="textContent">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</div>
+            <a href="#" class="salam">Learn more -></a>
+        </div>
+        <div class="card1 col">
+            <div class="icon"><i class="fa-solid fa-person"></i></div>
+            <div class="head" id="Social">Social Engagement</div>
+            <div class="textContent">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</div>
+            <a href="#" class="salam">Learn more -></a>
+        </div>
+        <div class="card1 col">
+            <div class="icon"><i class="fa-regular fa-lightbulb"></i></div>
+            <div class="head" id="Identity">Identity & Branding</div>
+            <div class="textContent">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</div>
+            <a href="#" class="salam">Learn more -></a>
+        </div>
+        <div class="card1 col">
+            <div class="icon"><i class="fa-solid fa-box-open"></i></div>
+            <div class="head" id="Design">Product Design</div>
+            <div class="textContent">Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras justo.</div>
+            <a href="#" class="salam">Learn more -></a>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="md-sec" >
+        <div class="head" id="why">Why Choose Sandbox?</div>
+        <div class="text" id="reasons">Here are a few <span>reasons</span> why our<p> customers choose Sandbox.</p></div>
+    </div>
+    <div  style="background-color: rgb(241, 243, 245);" class="reasons ">
+        <div class="container reson">
+            <div class="row gap-2">
+                <div class="col d-flex  "  >
+                    <div style="width: 50px;"><svg style="fill: #e668b3 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.98" 
+                        data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/bulb.svg" 
+                        class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#fab758] text-fuchsia !mr-4">
+                        <circle style="fill: #e668b3 !important; "class="fill-primary" cx="58.67" cy="149.31" r="32"></circle>
+                        <path style="fill: #e668b3 !important; " class="fill-primary" d="M88 202.65H29.33A29.36 29.36 0 000 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16A29.36 29.36 0 0088 202.65z"></path>
+                        <circle style="fill: #e668b3 !important; " class="fill-primary" cx="197.33" cy="149.31" r="32"></circle><path class="fill-primary" d="M226.67 202.65H168A29.36 29.36 0 00138.67 232v16a8 8 0 008 8H248a8 8 0 008-8v-16a29.36 29.36 0 00-29.33-29.35z"></path>
+                        <path style="fill: #dd8bbc !important; " class="fill-secondary" d="M149.76 108.48v7.68A11.9 11.9 0 01137.81 128h-19.63c-5.76 0-12-4.27-12-13.76v-5.76zM176 47.68a47.26 47.26 0 01-17.6 36.91 22.89 22.89 0 00-8.32 13.23H106a20 20 0 00-7.79-12.69A47.13 47.13 0 0180 46.73C80.53 21.34 101.76.33 127.25 0a47.34 47.34 0 0134.56 13.88A46.82 46.82 0 01176 47.68z"></path></svg></div>
+                <div class="txtReasons" id="clc">Collect Ideas<p>Duls mollis commade luctus cursus commodo mataroto bolo</p></div></div>
+                
+                <div class="col d-flex "  >
+                    <div style="width: 50px;"><svg style="fill: #8e24b1 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/compare.svg" class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#45c4a0] text-violet !mr-4"><path class="fill-primary" d="M123.22 148.5A8 8 0 00116 144H19.36a8 8 0 00-8 8c0 57.34 46.94 104 104.66 104a104.67 104.67 0 0045.45-10.29 8 8 0 003.76-10.71z"></path><path style="fill: #be68e6 !important; " class="fill-secondary" d="M152 19a8 8 0 00-8 8v95.39a7.93 7.93 0 00.8 3.49l41.73 85.95a8 8 0 0010.65 3.73c36.29-17.48 58.82-53.19 58.82-93.19C256 65.36 209.34 19 152 19z"></path><path class="fill-primary" d="M112 104V8a8 8 0 00-8-8A104.13 104.13 0 000 104a8 8 0 008 8h96a8 8 0 008-8z"></path></svg></div>
+                <div class="txtReasons" id="dta">Data Analysis<p>Duls mollis commade luctus cursus commodo mataroto bolo</p></div></div>
+                
+                <div  class="col d-flex"  >
+                    <div style="width: 50px;"><svg style="fill: #31ad5c !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/delivery-box.svg" class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#e2626b] text-green !mr-4"><path style="fill: #64dc8e !important; " class="fill-secondary" d="M172 20.57L55.79 80 9.6 57.32 123.71 1A9.43 9.43 0 01132 1zm74.27 36.75l-118.21 58.56-44.27-21.8-6.38-3.25L193.7 31.36l6.4 3.24z"></path><path class="fill-primary" d="M118.59 132.76L118.46 256 5.23 196.91A9.89 9.89 0 010 188.22V74.2l48 23.64v41.55a9.6 9.6 0 1019.2 0v-31.94l6.4 3.12zm137.28-58.43l-118.08 58.31-.13 123.23L256 194.08z"></path></svg></div>
+                <div class="txtReasons" id="imp">Implementations<p>Duls mollis commade luctus cursus commodo mataroto bolo</p></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Demonstration1">
+        <div class="container d-flex">
+        <div class="left" style="width: 600px;">
+            <div class="head" id="DATA">Data Analysis</div>
+            <div class="paragraph mt-2 mb-4" id="dataContent" style="font-size: 20px">Etiam porta sem malesuada magna mollis euismod. 
+                Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus,
+                porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna.</div>
+            <ul style="list-style: none; font-size:20px ">
+            <li class="lst"><i class="fa-regular fa-circle-check"></i>
+                Aenean eu leo quam. Pellentesque ornare.
+            </li>
+            <li class="lst"> <i class="fa-regular fa-circle-check"></i>
+                Aenean eu leo quam. Pellentesque ornare.
+            </li>
+            <li class="lst"><i class="fa-regular fa-circle-check"></i>
+                Aenean eu leo quam. Pellentesque ornare.
+            </li>
+            
+        </ul>
+        <button type="button" class="more">Read More</button>
+        </div>
+        <div class="right " >
+            <img  src="/Assets/Photos/dmn1.png" alt="" >
+        </div>
+        </div>
+    </div>
+
+    <div class="Demonstration2 pt-5 " style="background-color: rgb(241, 243, 245);padding-bottom:1px;">
+        <div class="container">
+        <div class="starting pb-5">
+            <div class="left">
+            <div class="head" id="qenaetH">SAVE TIME AND MONEY</div>
+            <div class="text" id="qenaetT">
+                Save your time and money by choosing our professional team.
+            </div>
+            </div>
+            <div class="right">
+                <div class="progress-container d-flex gap-5">
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 100 50" style=" display: block; width: 100%;"><path d="M 50,50 m -47,0 a 47,47 0 1 1 94,0" stroke="#eee" stroke-width="6" fill-opacity="0"></path><path d="M 50,50 m -47,0 a 47,47 0 1 1 94,0" stroke="red" stroke-width="6" fill-opacity="0" style="stroke-dasharray: 141.708, 147.708; stroke-dashoffset: 7.3854;"></path></svg>                        <p class="percentage">95%</p>
+                        <p id="satisfaction">Customer Satisfaction</p>
+                    </div>
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 100 50" style="display: block; width: 100%;"><path d="M 50,50 m -47,0 a 47,47 0 1 1 94,0" stroke="#eee" stroke-width="6" fill-opacity="0"></path><path d="M 50,50 m -47,0 a 47,47 0 1 1 94,0" stroke="orange" stroke-width="6" fill-opacity="0" style="stroke-dasharray: 147.708, 147.708; stroke-dashoffset: 29.5416;"></path></svg>                        <p class="percentage">80%</p>
+                        <p id="revenue">Increased Revenue</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Demonstration2_sub d-flex">
+            <img src="/Assets/Photos/dmn2.png" alt="">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner ">
+                  <div class="carousel-item p-5 active ">
+                    <div class="stars mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-size: x-large;">“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.”</p>
+                    <h5>Cary Zamera</h5>
+                    <h5 style="font-weight: 100;">Marketing Specialist</h5>
+                </div>
+                  <div class="carousel-item">
+                    <div class="stars mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-size: x-large;">“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.”</p>
+                    <h5>Cary Zamera</h5>
+                    <h5 style="font-weight: 100;">Marketing Specialist</h5>                  
+                </div>
+                  <div class="carousel-item">
+                    <div class="stars mb-3">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p style="font-size: x-large;">“Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum ligula porta felis euismod semper. Cras justo odio.”</p>
+                    <h5>Cary Zamera</h5>
+                    <h5 style="font-weight: 100;">Marketing Specialist</h5>                  
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden" >Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="middle-2">
+    <div class="head" id="latestH">LATEST PRODUCTS</div>
+    <div class="text" id="latestT">Check out some of our awesome projects <p>with <span>creative</span> ideas and great design.</p></div>
+</div>
+
+<div class="slie " style="margin-bottom: 250px;">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 mx-auto">
+                <div class="card" style="width:100%;">
+                    <img style="border-radius:10px !important;" src="Assets/Photos/products/pr1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Cras Fermentum Sem</h3>
+                      <p class="card-text">Stationary.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 100%;">
+                    <img style="border-radius:10px !important;" src="Assets/Photos/products/pr2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Cras Fermentum Sem</h3>
+                      <p class="card-text">Stationary.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-md-">
+                <div class="card" style="width:100%;">
+                    <img style="border-radius:10px !important;" src="Assets/Photos/products/pr3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Cras Fermentum Sem</h3>
+                      <p class="card-text">Stationary.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="near-end" style="margin-bottom:200px" >
+    <div class="container d-flex">
+    <div class="photos d-flex flex-wrap gap-2">
+        <img style="height:auto;width: 80%;border-radius: 10px;" src="/Assets/Photos/last/son1.png" alt="">
+        <img style="height:auto;border-radius: 10px;margin-right:40px;margin-top:20px" src="/Assets/Photos/last/son2.png" alt="">
+        <img style="height:auto;border-radius: 10px;" src="/Assets/Photos/last/son3.png" alt="">
+    </div>
+    <div class="context" style="width: 100%; height:600px;align-content:center;">
+        <div class="head" id="difH" style="color:rgb(115, 115, 115);">
+            WHAT MAKES US DIFFERENT?
+        </div>
+        <div class="text" id="difT" style="font-size: 37px;font-weight:600">
+            We bring <span style="text-decoration: underline;text-decoration-color:orange;">solutions</span> to make life easier for or customers.
+        </div>
+        <div class="icon-things d-flex mt-5">
+            <div class="row gap-5">
+            <div class="col gap-4 d-flex ">
+                <div style="width: 50px;"><svg style="fill: #e668b3 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.98" 
+                    data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/bulb.svg" 
+                    class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#fab758] text-fuchsia !mr-4">
+                    <circle style="fill: #e668b3 !important; "class="fill-primary" cx="58.67" cy="149.31" r="32"></circle>
+                    <path style="fill: #e668b3 !important; " class="fill-primary" d="M88 202.65H29.33A29.36 29.36 0 000 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16A29.36 29.36 0 0088 202.65z"></path>
+                    <circle style="fill: #e668b3 !important; " class="fill-primary" cx="197.33" cy="149.31" r="32"></circle><path class="fill-primary" d="M226.67 202.65H168A29.36 29.36 0 00138.67 232v16a8 8 0 008 8H248a8 8 0 008-8v-16a29.36 29.36 0 00-29.33-29.35z"></path>
+                    <path style="fill: #dd8bbc !important; " class="fill-secondary" d="M149.76 108.48v7.68A11.9 11.9 0 01137.81 128h-19.63c-5.7
+                    6 0-12-4.27-12-13.76v-5.76zM176 47.68a47.26 47.26 0 01-17.6 36.91 22.89 22.89 
+                    0 00-8.32 13.23H106a20 20 0 00-7.79-12.69A47.13 47.13 0 0180 46.73C80.53 21.34 101.76.33 127.25 0a47.
+                34 47.34 0 0134.56 13.88A46.82 46.82 0 01176 47.68z"></path></svg></div>
+                <div class="cntext"><h3>Creativity</h3>
+                    Curabitur blandit lacus porttitor ridiculus mus.</div>
+            </div>
+            <div class="col gap-4 d-flex">
+                <div style="width: 50px;"><svg style="fill: #e668b3 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.98" 
+                data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/bulb.svg" 
+                class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#fab758] text-fuchsia !mr-4">
+                <circle style="fill: #e668b3 !important; "class="fill-primary" cx="58.67" cy="149.31" r="32"></circle>
+                <path style="fill: #e668b3 !important; " class="fill-primary" d="M88 202.65H29.33A29.36 29.36 0 000 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16A29.36 29.36 0 0088 202.65z"></path>
+                <circle style="fill: #e668b3 !important; " class="fill-primary" cx="197.33" cy="149.31" r="32"></circle><path class="fill-primary" d="M226.67 202.65H168A29.36 29.36 0 00138.67 232v16a8 8 0 008 8H248a8 8 0 008-8v-16a29.36 29.36 0 00-29.33-29.35z"></path>
+                <path style="fill: #dd8bbc !important; " class="fill-secondary" d="M149.76 108.48v7.68A11.9 11.9 0 01137.81 128h-19.63c-5.7
+                6 0-12-4.27-12-13.76v-5.76zM176 47.68a47.26 47.26 0 01-17.6 36.91 22.89 22.89 
+                0 00-8.32 13.23H106a20 20 0 00-7.79-12.69A47.13 47.13 0 0180 46.73C80.53 21.34 101.76.33 127.25 0a47.
+                34 47.34 0 0134.56 13.88A46.82 46.82 0 01176 47.68z"></path></svg></div>
+                <div class="cntext"><h3>Creativity</h3>
+                    Curabitur blandit lacus porttitor ridiculus mus.</div>
+        </div>
+            <div class="row gap-5">
+                <div class="col gap-4 d-flex">
+                    <div style="width: 50px;"><svg style="fill: #e668b3 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.98" 
+                    data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/bulb.svg" 
+                    class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#fab758] text-fuchsia !mr-4">
+                    <circle style="fill: #e668b3 !important; "class="fill-primary" cx="58.67" cy="149.31" r="32"></circle>
+                    <path style="fill: #e668b3 !important; " class="fill-primary" d="M88 202.65H29.33A29.36 29.36 0 000 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16A29.36 29.36 0 0088 202.65z"></path>
+                    <circle style="fill: #e668b3 !important; " class="fill-primary" cx="197.33" cy="149.31" r="32"></circle><path class="fill-primary" d="M226.67 202.65H168A29.36 29.36 0 00138.67 232v16a8 8 0 008 8H248a8 8 0 008-8v-16a29.36 29.36 0 00-29.33-29.35z"></path>
+                    <path style="fill: #dd8bbc !important; " class="fill-secondary" d="M149.76 108.48v7.68A11.9 11.9 0 01137.81 128h-19.63c-5.7
+                    6 0-12-4.27-12-13.76v-5.76zM176 47.68a47.26 47.26 0 01-17.6 36.91 22.89 22.89 
+                    0 00-8.32 13.23H106a20 20 0 00-7.79-12.69A47.13 47.13 0 0180 46.73C80.53 21.34 101.76.33 127.25 0a47.
+                    34 47.34 0 0134.56 13.88A46.82 46.82 0 01176 47.68z"></path></svg></div>
+                    <div class="cntext"><h3>Creativity</h3>
+                        Curabitur blandit lacus porttitor ridiculus mus.</div>
+            </div>
+            <div class="col gap-4 d-flex">
+                <div style="width: 50px;"><svg style="fill: #e668b3 !important; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 255.98" 
+                data-inject-url="https://sandbox-tailwind-template.netlify.app/assets/img/icons/solid/bulb.svg" 
+                class="svg-inject icon-svg icon-svg-md !w-[2.2rem] !h-[2.2rem] solid-mono text-[#fab758] text-fuchsia !mr-4">
+                <circle style="fill: #e668b3 !important; "class="fill-primary" cx="58.67" cy="149.31" r="32"></circle>
+                <path style="fill: #e668b3 !important; " class="fill-primary" d="M88 202.65H29.33A29.36 29.36 0 000 232v16a8 8 0 008 8h101.33a8 8 0 008-8v-16A29.36 29.36 0 0088 202.65z"></path>
+                <circle style="fill: #e668b3 !important; " class="fill-primary" cx="197.33" cy="149.31" r="32"></circle><path class="fill-primary" d="M226.67 202.65H168A29.36 29.36 0 00138.67 232v16a8 8 0 008 8H248a8 8 0 008-8v-16a29.36 29.36 0 00-29.33-29.35z"></path>
+                <path style="fill: #dd8bbc !important; " class="fill-secondary" d="M149.76 108.48v7.68A11.9 11.9 0 01137.81 128h-19.63c-5.7
+                6 0-12-4.27-12-13.76v-5.76zM176 47.68a47.26 47.26 0 01-17.6 36.91 22.89 22.89 
+                0 00-8.32 13.23H106a20 20 0 00-7.79-12.69A47.13 47.13 0 0180 46.73C80.53 21.34 101.76.33 127.25 0a47.
+                34 47.34 0 0134.56 13.88A46.82 46.82 0 01176 47.68z"></path></svg></div>
+                <div class="cntext"><h3>Creativity</h3>
+                    Curabitur blandit lacus porttitor ridiculus mus.</div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="end-colorful mb-5 baa" style="background: linear-gradient(100deg,#a51ddb,rgb(217, 149, 3)  ,#ff3700);">
+    <div class="container ">
+        <div class="head" id="communityHead">JOIN OUR COMMUNITY</div>
+        <div class="text" id="communityText">We are trusted by over 5000+ clients.<p>Join them now and grow  your business.</p></div>
+        <div class="btn" id="communityButton">Get Started</div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="widget">
+                    <img class="logo-dark mb-3" src="./assets/Photos/logo-dark.png" alt="image">
+                    <p class="mb-3">© 2024 Sandbox. <br class="hidden xl:block lg:block">All rights reserved.</p>
+                    <nav class="nav social gap-4">
+                      <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="fa fa-facebook-square "></i></a>
+                      <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="fa fa-youtube "></i></a>
+                      <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="fa fa-twitter "></i></a>
+                      <a class="text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="fa fa-instagram"></i></i></a>
+                    </nav>
+                    <!-- /.social -->
+                  </div>            </div>
+            <div class="col">
+                <div class="head" style="font-size: 23px;font-weight:600" id="contact">Get in Touch</div>
+                <div class="adress">
+                    Moonshine St. 14/05 <p>Light City, London,<p>United Kingdom</p></p>
+                </div>
+                <div class="info">info@gmail.com<p>00 (123) 456 78 90</p></div>
+            </div>
+            <div class="col">
+                <div class="head" id="learnMore" style="font-size: 23px;font-weight:600">Learn More</div>
+                <ul style="list-style:none;" id="melumat" class="mt-4">
+                    <li>About Us </li>
+                    <li>Our story</li>
+                    <li>Projects</li>
+                    <li>Terms of use</li>
+                    <li>Privacy & Policy</li>
+                </ul>
+                
+            </div>
+            <div class="col">
+                <div class="head" style="font-size: 23px;font-weight:600">Our Newsletter</div>
+                <div class="subs mt-3">Subscribe to our newsletter to get our<p>news & deals delivered to  your </p></div>
+                <form>
+                    <input type="email" placeholder="Email address" >
+                    <button type="submit">Join</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="/Assets/JS/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
