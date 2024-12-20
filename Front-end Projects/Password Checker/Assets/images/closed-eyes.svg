@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50" width="100" height="50">
+  <!-- Left Eye -->
+  <circle cx="30" cy="25" r="15" fill="white" stroke="rgb(33, 142, 222)" stroke-width="2" />
+  <circle cx="25" cy="25" r="6" fill="rgb(55, 53, 182)" />
+  
+  <!-- Right Eye -->
+  <circle cx="70" cy="25" r="15" fill="white" stroke="rgb(33, 142, 222)" stroke-width="2" />
+  <circle cx="65" cy="25" r="6" fill="rgb(55, 53, 182)" />
+</svg>
+
