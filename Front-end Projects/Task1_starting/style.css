@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+font-family: arial;
+
+}
+html{
+    overflow-x:hidden;
+}
+
+.AD{
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 15vh;
+}
+.AD div{
+    display: flex;  
+    align-content: center;
+    align-items: center;
+}
+.AD #percent p{
+    font-size: 40px;
+    margin: 4px;
+    color: yellow;
+    
+}
+.AD .ad_btn{
+    border: none;
+    background-color: rgb(235, 194, 11);
+    height: 50px;
+    width: 120px;
+}
+
+#yellow{
+    color: black; background-color:yellow;
+    transform: rotate(-10deg);
+    margin-right: 5px;
+}
+#Sticky-head{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .top-head{
+    
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    background-color:rgb(66, 101, 136) ;
+    color:white;
+}
+#Welcome{
+    grid-column: 2/4;
+    margin-top: 5px;
+}
+#Social{
+    margin-top: 5px;
+    grid-column: 4 / 5;
+}
+#Right-top-choices{
+    grid-column: 5 / 6;
+    display: flex;
+    justify-content: end;
+}
+.choose_top{
+    background: #ffffff00;
+    color: #c2c2c2;
+    border:none;
+    transform: scale(0.84);
+}
+header .middle-head{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 101, 136);
+    
+}
+hr{
+    border: 0.5px solid rgb(73, 103, 150);
+}
+
+#chk1{
+    display: none;
+}
+i{
+     cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: end;
+    
+}
+
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #fff;
+    text-align: left;
+    padding-left: 5px;
+    color: grey;
+    
+}
+.search-box button{
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background-color: #ffffff;  
+}
+.right-icons i{
+    color: #fff;
+}
+
+header .right-icons{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly; 
+    transform: scale(1.2)
+}
+.right-icons a:hover{
+    border-bottom: 3px solid #000;
+    transform: scale(1.1);
+}
+
+header .bottom_head{
+    width: 100%;
+    height: 50px;
+   align-items: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    
+}
+.bottom_head .Navigation{
+    flex: 4;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+.bottom_head #category{
+    height: 40px;
+    background-color: aliceblue ;
+    border: none;
+}
+.bottom_head ul{
+    flex: 2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+.bottom_head ul li{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-left: 20px;
+
+}
+.bottom_head ul li i{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 10px;
+
+}
+.bottom_head ul li a{
+    text-decoration: none;
+    color: #000;
+
+}
+
+.Phone{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+  
+#Right-top-choices{
+    display: flex;
+    
+}
+.top_products{
+   margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+#Xbox{
+    display: flex;
+}
+
+.Xbox_text{
+    background-color: #d3f3f3;
+    max-height: 40vh;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+}
+#Xbox_img{
+    max-width: 40vh;
+    
+}
+
+.btn {
+    background-color: rgb(255, 153, 0);
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+button:active{
+    transform: scale(0.9);
+}
+
+.Product_{
+
+    display: flex;
+    margin: 2px;
+}
+.Product_text{
+    font-size: x-large;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-content: center;
+    max-height: 18vh;
+    width: 220px;
+    color: white;
+    
+}
+.Product_img{
+    width: 18vh;
+}
+#s_btn {
+    background-color: rgb(255, 153, 0);
+    border: none;
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2 ease;
+}
+
+#s_prod{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid  #ccc;
+    background-color: #6d6d6d69;
+
+}
+
+#Information{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-top: 80px;
+    box-shadow:0px 0px 0px 3px #55555593;
+}
+#Alert{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+#Alert_text{
+   display:grid;
+   grid-template-columns: 200px  200px 200px;
+    align-items: center;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(autofit,minimax(5, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    margin:0 auto;
+
+  }
+  
+  #dev0 {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    margin-top: 20px;
+    }
+  #dev1 {
+    grid-area: 1 / 1 / span 2 / span 1;}
+  #dev2 {
+    grid-area: 1 / 2 / span 1 / span 1;}
+  #dev4{
+    grid-area: 1 /  4/ span 1 / span 1;}
+  #dev5 {
+    grid-area: 1 / 5 / span 1 / span 1;}
+  #dev7 {
+    grid-area: 2 / 2 / span 1 / span 1;}
+  #dev8 {
+    grid-area: 2 / 3 / span 1 / span 1;}
+  #dev9 {
+    grid-area: 2 / 4 / span 1 / span 1;}
+  #dev10 {
+    grid-area: 2 / 5 / span 1 / span 1;}
+
+.b_hov:hover{
+    background-color: #27272721;
+    z-index:1 ;
+    cursor: pointer;
+}
+
+.ad_cart{
+    background-color: orange; border:none; color: white; width:156px; height: 48px;
+    margin-left:50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.tt{
+    color: rgb(22, 177, 177);
+}
+
+.product-slider{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 50px;
+
+}
+.product{
+    
+    padding: 20px;
+    text-align: center;
+}

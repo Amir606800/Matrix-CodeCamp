@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    overflow-x: clip;
+}
+
+
+
+#menu{
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+button{
+    width:170px;
+    height: 50px;
+    background-color:rgb(255, 191, 0) ;
+    border-radius: 10px !important;
+    border: none;
+    font-weight: 700;
+    z-index: 1;
+    transition: all .3s;
+    }
+    
+    button:hover{
+        color: white;
+        background-color: rgba(16, 16, 16, 0.797);
+    }
+.navbar{
+     background-color: #5c6e12; height:80px; 
+     color: white;
+     
+     transition: background-color 0.3s ease;
+     #head-btn{
+        justify-content: center;
+        align-content: center;
+        color: white;
+        gap: 20px;
+        border: none;
+     }
+     .menu{
+        
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+    
+    .icons{
+        align-items: center;
+      .icon{
+        
+        border: 1px solid white;
+        border-radius: 100px;
+        padding: 10px;
+        width: 45px;
+        height: 45px;
+        align-content: center;
+        text-align: center;
+    @media (max-width:1024px){
+        display: none;
+    }
+    }  
+    
+    .ph{
+        @media (min-width:1024px){
+            display: none;
+        }
+    }
+    }
+    
+}
+.navbar.scrolled {
+    background-color: #333; /* Change to your desired color */
+    color: rgb(83, 70, 51); /* Optional: Change text color */
+                }
+
+                .container-item{
+                    display: flex;
+    overflow-wrap: break-word;
+}
+
+@media (max-width:1024px){
+    .main{
+        .left{
+            text-align: center;
+        }
+        .container{
+            
+            flex-direction: column;
+        }
+        .right{
+            .pr-big{
+                margin-top: -300px;
+            }
+        }
+    }
+}
+
+.main{
+    background-color: #5c6e12;
+    justify-content: space-between;
+    
+    .left{
+        
+        padding-top: 200px;
+        width: 50%;
+        .text{
+            h2{
+                font-weight: 800;
+                color: white;
+                font-size: 45px;
+                }    
+            } 
+        .order{
+            margin-top:50px;
+            margin-bottom:80px;
+            
+            }
+        .contact-info{
+            
+            padding-top: 80px;
+            padding-bottom: 100px;
+            align-content: center;
+            .p-logo{
+                
+                margin-right: 20px;
+                width: 70px;
+                height: 70px;
+                align-content: center;
+                text-align: center;
+                border: none;
+                border-radius: 10000px;
+                background-color: rgb(119, 194, 7);
+                i{
+                    font-size: 2rem; color: white;
+                }
+            }
+            .text-cnt{
+    
+                h5{
+                    font-size: 25px;
+                    color: white;
+                }
+                h2{
+                    font-size: 30px;
+                    color:rgb(255, 191, 0)
+                }
+            }
+            .text-cnt , .p-logo{
+              @media (max-width:1024px){
+                display: none;
+                        }  
+            }
+
+            
+        } 
+         
+        }
+        
+        .right{
+            top: 0;
+            transform:translate(-10%,7%);
+            .pr-big{
+                img{  
+                    background-image: url(/Assets/Pictures/meals/bckgrounds/pizza_bck.png); 
+                    background-size: 110%;
+                    background-clip: none;
+                    background-repeat: no-repeat; 
+                    background-position: center;
+                max-width:100%;  
+                height: auto; 
+                    }
+                }
+                img{
+                    align-content: center;
+                    
+                    height: auto;
+                    width: 100%;
+                    
+          }
+          
+        }
+        
+}
+ 
+.con1{
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .c1{
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(126, 77, 163);
+            overflow: hidden;
+            padding: 10px;
+            position:relative;
+            background-image: url(/Assets/Pictures/meals/bckgrounds/bck1.png);
+            background-size: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-decoration: none;
+            .txt{
+                z-index: 1;
+                width:110px;
+                font-size: 30px;
+                font-weight: 700;
+                color: white;
+            }
+            img{
+                position: absolute;
+                bottom:-50% ;
+            } 
+            transition: all .3s;   
+        }
+        .c1:hover{
+            background-size: 100%;
+            transform: scale(1.01)
+        }
+        .col2{
+            text-align: center;
+            align-items: center;
+            
+            
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(237, 77, 77);
+            background-image: url(/Assets/Pictures/meals/bckgrounds/bck3.png);
+            background-repeat: no-repeat;
+            background-size: 0;
+            background-position: center;
+            transition: all .3s;  
+            .txt{
+                font-size: xx-large;
+                font-weight: 700;
+                color: white;
+            }
+            .text-bot{
+                p{
+                    font-size: xx-large;
+                    font-weight: 700;
+                    color: white;
+                    align-content:center;
+                }
+                width: 100%;
+                justify-content: center;
+                gap: 10px;
+                align-items: center;
+            }
+            
+        }
+        .col2:hover {
+                background-size: 100% !important;
+                transform: scale(1.01);
+            }
+        .c3{
+            background-color: rgb(51, 171, 159);
+            color: white;
+            align-content: center;
+            border: none;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            .text{
+                padding: 10px;
+                #food{
+                font-size: 40px;font-weight: 800;
+                margin: 0;
+            }
+            #del{
+                font-family: "Norican";
+                font-size: xx-large;
+                margin-bottom: -20px;
+            }
+            #weekend{
+                font-size: larger;
+                margin-top:0
+            }
+            
+            }
+            img{
+                position: absolute;
+                top: 40%;
+            }
+            background-image: url(/Assets/Pictures/meals/bckgrounds/bck2.png);
+            background-size: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all .3s;
+        }
+        .c3:hover{
+            background-size: 100%;
+            transform: scale(1.01);
+        }
+    }
+
+
+.container{
+    .main2{
+        margin-bottom: 100px;
+        min-height: 140px;
+        background-color: rgb(8, 184, 8);
+        border-radius: 20px;
+        text-align: center;
+        align-content: center;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        .formy{
+            
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+            select, input{
+                background: none;
+                width: 100%;
+                min-width: 30vh;
+                color: rgba(255, 255, 255, 0.83);
+                border: 1px solid rgba(255, 255, 255, 0.445);
+                border-radius: 10px;
+                height: 60px;
+                text-align: center;
+                
+            }
+            button{
+                height: 60px;
+                transition: all .3s;
+            }
+            button:hover{
+                color: white;
+                background: none !important;
+                border: 1px solid rgba(255, 255, 255, 0.339);
+            }
+            
+            
+            
+            @media (max-width:1024px){
+                flex-wrap: nowrap;
+                flex-direction: column;
+                button{
+                    width: 100%;
+                }
+                }
+        }
+        .txt-frm{
+            font-weight: 700;
+            color: white;
+            font-size: 20px;
+            #nmr{
+                color: rgb(240, 156, 0);
+            }
+        }
+    
+        
+    }
+}
+
+.hot{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    p{
+        color: rgb(255, 166, 0);
+        font-family: "Norican", Sans-serif ;
+        margin: -20px;
+    }
+}
+
+
+.con2{
+    gap: 20px;
+    margin-bottom: 50px;
+        flex-wrap: wrap;
+    .img{
+        border-radius: 20px;
+        transition: all .4s;
+        img{
+        transition: all .3s;
+        width: 100%;
+        margin-top: 3px;
+    }
+}
+.img:hover{
+    background-color: rgb(255, 183, 48);
+    img{
+        transform: scale(1.1);
+    }
+}
+    .cls{
+        
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 3px;
+        .ml-name{
+            font-size:large;
+            font-weight: 700;
+        }
+        .prc{
+            text-align: center;
+            gap: 60px;
+            #price{
+                color: orange;
+                font-weight: 800;
+            } 
+            #bskt{
+                text-align: end;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.main3{
+    padding: 40px;
+    background-image: url(/Assets/Pictures/meals/bckgrounds/asagi.jpg) !important;
+    
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:20px ;
+    #our{
+        font-size: 30px; text-align:center;font-family: 'Norican', Sans-serif;color:rgb(255, 183, 0)
+    }
+    #Poco{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        color: white;
+    }
+    .container{
+        background-image: url(https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_img10.png);
+        background-repeat: no-repeat;
+        background-position: 150%;
+        .row{
+            margin: 10px;
+            gap: 20px;
+            width: 120;
+          .col{
+            padding: 10px;
+            height: auto;
+            border-radius: 20px;
+            background-color: white;
+            border: 1px solid black;
+            .heading{
+                font-size: 30px;
+                font-family: "Norican", Sans-serif ;
+            }
+            .inner-r{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .pht{
+                    width:auto;
+                }
+                .txt{
+                    position: relative;
+                    width: 450px;
+                    @media (max-width:1199px){
+                        width: 740px;
+                    }
+                    hr{
+                        margin:4px;
+                    }
+                    #yemek_adi{
+                        font-size: x-large;
+                        font-weight: 900;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    #prce{
+                        color: rgb(255, 183, 0);
+                        position: absolute;
+                        right: 0;
+                        font-size: x-large;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }  
+        }
+        
+    }
+    
+}

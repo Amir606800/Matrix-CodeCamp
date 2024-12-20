@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+#check{
+    display: none;
+}
+.bttn{
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background-color: orange;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    transition: ease .5s;
+    p{
+        color: white;
+        font-size: x-large;
+        font-weight: 700;
+    }
+    
+}
+.bttn:active{
+    transform: scale(0.9);
+}
+.bttn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.Main{
+    margin-top:20px ;
+    .top-product{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .img1st{
+            width: 40%;
+            overflow: hidden;
+            border-radius: 20px;
+            img{
+        max-width: 100%;
+        max-height: 100%;
+                }
+            }
+    
+    .t-p-text{
+        align-items: start;
+        justify-content: center;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        h3{
+            margin-bottom: 10px;
+        }
+        span{
+            font-size:50px;
+            text-align: start;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #design-p{
+            text-align: start;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-top: 10px;
+        }
+        #discover{
+            margin:40px ;
+        }
+    }
+
+    }
+    #head-bot{
+        text-align: center;
+        margin: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+    }
+
+    .cozys, .cozys2{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .cozy-items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .cozy_photo{ 
+                position: relative;   
+                width: 80%;
+
+                img{
+                  max-width: 100%;
+                  max-height: 100%;
+                }
+                    }
+
+        .cozy_price{
+            margin-top:10px ;
+            text-align: center;  
+                }
+                }
+    }
+    .cozys2{
+        margin: 80px;
+        .cozy_text2{
+            font-size: 17px;
+            font-weight: 700;
+        }
+        .prd_photo{
+            width: 80%;
+            img{
+                max-width: 100%;
+                max-height: 100%;
+              }
+        }
+        img{
+            border-radius: 30vh;
+            transition: all .4s
+        }
+        .prd_photo:hover img{
+            transform: scale(1.1);
+                }          
+    }
+    .Living-room{
+        #Head{
+            text-align: center;
+            margin: 50px;
+        }
+        #sale{
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            font-size: larger;
+            text-align: center;
+            width: 50px;
+            border-radius: 20vh;
+            background-color: orange;
+            color: white;
+        }
+        .cozys{
+            margin-bottom: 50px;
+        }
+        }
+    #more{
+        margin: 30px;
+        text-align: center;
+        
+        button{
+            background-color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 100px;
+            border: 1px solid rgba(100, 100, 100, 0.5);
+            transition: all .5s;
+        }
+        button:hover{
+            background-color: orange;
+            color: white;
+        }
+    }
+    .Treasure{
+        margin:50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    
+        .container{
+            padding: 14vh;
+            border-radius: 20px;
+            align-content: center;
+            background-color: #E5ECED;
+            background-image: url(/Assets/images/Background.png);
+            width: 90%;
+            height: auto;
+            font-size: 20px;
+        .World{
+            font-size: 6vw;
+            font-weight: 700;
+            max-width: 100%;
+            font-family: 'Outfit', serif;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px;
+            li{
+                border-radius: 20vh;
+                background-color: white;
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                align-content: center;
+                border: 1px solid rgba(0, 0, 0, 0.229);
+            }
+        }
+        
+       
+            button{
+                margin-top: 20px;
+                background-color: orange;
+                width: 30vw; /* Responsive button width */
+                height: 8vh;
+                border-radius: 40px;
+                border: none;
+                color: white;
+                font-size: 2vw;
+                font-weight: 600;
+                transition: all .4s;
+            }
+            button:active{
+                transform: scale(0.9);
+            }
+            button:hover{
+                background-color: rgba(0, 0, 0, 0.797);
+                
+            }
+        
+        }
+    }
+    
+}
+ 
+.cozys {
+    .cozy_photo {
+        position: relative;
+
+        /* Icons are hidden by default */
+        .icons {
+            height: 100%;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: larger;
+            opacity: 0;
+            transition: opacity 0.3s ease; /* Smooth transition for opacity */
+        }
+
+        /* Show icons on hover */
+        &:hover .icons {
+            opacity: 1;
+        }
+
+        .heart-icon,
+        .search-icon,
+        .bag-icon {
+            border: 1px solid;
+            border-radius: 200px;
+            width: 25px;
+            height: 25px; /* Add a height for consistent circle shape */
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth background-color transition */
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 35px; /* Adjust spacing as needed */
+            right: 5px;
+        }
+
+        .bag-icon {
+            position: absolute;
+            bottom: 15px;
+            right: 5px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .icons svg {
+            font-size: 16px; /* Set a font-size for icons inside SVG */
+            color: rgb(255, 255, 255) !important;
+        }
+
+        /* Optional: Hover effect for icons */
+        .heart-icon:hover,
+        .search-icon:hover,
+        .bag-icon:hover {
+            background-color: orange; /* Change background color on hover */
+        }
+    }
+}
+
+#stock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #E5ECED;
+    padding: 4px;
+}

@@ -1,0 +1,56 @@
+@media screen and (max-width:768px) {
+
+    header{
+        .left-icons{
+            width: 20vh;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            
+        }
+        
+        
+        #heart{
+            display: none;
+        }
+        
+        
+}
+.bot-head{
+    
+    #bars{
+        display: flex;
+        font-size: x-large;
+        cursor: pointer;
+        margin-left: 20px;
+        
+    }
+    #bars-a{
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        
+    }
+    .Side-bar{
+        position: fixed;
+        background-color: rgb(255, 255, 255);
+        height: 60vh;
+        width: 20vh;
+        margin: 0;
+        left: -100%;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+        transition: all 0.5;
+        
+    }
+    #check:checked ~ .Side-bar{
+        left: 0;
+    }
+    
+}
+
+}
