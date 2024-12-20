@@ -1,0 +1,41 @@
+.FeedBack{
+    margin-top: 2em;
+    margin: 2em;
+    .container{
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+        max-width: 75em;
+        .review{
+            margin: 20px;
+            .creator{
+                display: flex;
+                justify-content: space-between;  
+                margin-bottom: 20px;              
+                .info{
+                    display: flex;
+                    gap: 29px;
+                    align-items: center;
+                    img{
+                        width: 80px;
+                        border-radius: 50px;
+                    }
+                    .creator-name{
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                    
+                }
+            }
+            .content{
+                .title{
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+                .desc{
+                    font-size: large;
+                }
+            }
+        }
+    }
+}

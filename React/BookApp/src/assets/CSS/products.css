@@ -1,0 +1,126 @@
+.glider{
+    transform: scale(0.95);
+    .container{
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        .toplum{
+            position: relative;
+            width: 100%;
+            height: 30em;
+        }
+        .cards{
+            border: 2px solid rgb(125, 125, 125);
+            position: absolute;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            border-radius: 20px;
+            width: 100%;
+            transition: all .5s;
+            .job-image{
+                height: 30em;
+                transition: all .4s;
+            }
+            background-color: white;
+            .content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                margin: 40px;
+                transform: scale(1.9);
+                position: relative;
+                .subtitle{
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                    color: rgb(127, 127, 127);
+                }
+                .title{
+                    font-size: larger;
+                    font-weight: bolder;
+
+                }
+                .creator{
+                    font-size: x-small;
+                    margin-bottom: 5px;
+                    img{
+                        width: 22px;
+                        border-radius: 20px;
+                        margin-right: 4px;
+                    }   
+                }
+                .locat{
+                    font-size: small;
+                    color: rgb(127, 127, 127);
+                }
+                .price{
+                    font-size: 18px;
+                    align-items:flex-end ;
+                    margin-top: 5px;
+                    span:nth-child(2){
+                        text-decoration: line-through;
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    }
+                    span:nth-child(1){
+                        font-weight: bolder;
+                    }
+                }
+                .btn-book{
+                    margin-top: 15px;
+                    padding: 9px;
+                    border-radius: 30px;
+                    background: white;
+                    color: black;
+                    border: 1px solid rgb(228, 228, 228);
+                    font-size: 10px;
+                    transition: all .3s;
+                }
+                .heart{
+                    cursor: pointer;
+                    position: relative;
+                    
+                    top: -50%;
+                    right: -23%;
+                    button{
+                       position: absolute; 
+                       border: 1px solid rgb(156, 156, 156);
+                       background-color: white;
+                       border-radius:100%;
+                       width: 25px;
+                       height: 25px;
+                       align-content: center;
+                       text-align: center;
+                       transition: all .4s;
+                    }
+                    button:hover{
+                        background-color: rgb(250, 72, 72);
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .cards:hover{
+            .btn-book{
+                color: white;
+                background-color: rgb(255, 64, 64);
+            }
+            .job-image{
+                transform: scale(1.03);
+            }
+        }
+        
+    }
+}
+button:active{
+    transform: scale(0.96);
+}

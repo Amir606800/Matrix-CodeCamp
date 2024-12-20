@@ -1,0 +1,134 @@
+.log{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgb(255, 74, 74);
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgb(255, 111, 111) 0px 0px 13px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s;
+    svg,span{
+        z-index: 1;
+    }
+   }
+   .log:after{
+    content: "";
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    left: 45%;
+    top: -125%;
+    transition: all .4s;
+    transform: scale(3.7);
+   }
+   .log:hover{
+    margin-bottom: 8px;
+   }
+   .log:hover::after{
+    top: 0;
+    transform: scale(9);
+   }
+
+.bars{
+    display: none;
+}
+
+.headSite{
+    position: sticky !important;
+    top: 0;
+    background-color: white;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    z-index: 9999;
+    box-shadow: 0px 0px 50px -35px;
+    .container{
+    
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .navSystem{
+        margin-top: 15px;
+        list-style: none;
+        display: flex;
+        gap: 50px;
+        .navItem{
+            font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            display: flex;
+            gap: 4px;
+            transition: all .2s;
+            cursor: pointer;
+            
+            span{
+                transition: all .2s;
+                transform-origin: 50% 59%;
+            }
+            
+        }
+        .navItem:hover{
+            color: red;
+            
+            span{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    .feats{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+       .lang{
+           display: flex;
+           align-items: center;
+           gap: 4px;
+           
+       }
+       
+    }
+
+}
+}
+
+.sub-head{
+    
+    background: url(https://themeforest.kreativdev.com/bookapp/demo/assets/images/page-title-bg-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    box-sizing: border-box;
+    color: white;
+    width: 100%;
+    .container{
+        
+        h1{
+            padding: 1px;
+            font-family: "Fira Sans", sans-serif;
+            font-size:50px;
+            font-weight: bold;
+        }
+        h6{
+            font-weight: 100;
+            margin-top: 10px;
+            font-family: "Poppins", sans-serif;
+            
+        }
+    }
+    
+}
+
+

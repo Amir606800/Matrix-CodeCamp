@@ -1,0 +1,165 @@
+
+.control-buttons{
+    height: 3em;
+    width: 3em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: rgb(255, 11, 11);
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+.Services{
+    margin-top: 5em;
+    .container{
+    
+        .slider{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+            .gallery{
+                img{
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+            }
+            
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            border: 5px solid rgb(64, 64, 64);
+            box-shadow: 0px 0px 10px 0px #787878;
+            border-radius: 20px;
+            padding: 30px;
+            .title{
+                font-size: large;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                p{
+                    color: rgb(69, 69, 69);
+                }
+                h2{
+                    font-size: 34px;
+                    font-weight: bold;
+                }
+            }
+            .creator{
+                .prices{
+                    
+                    font-size: 25px;
+                    font-weight: bolder;
+                    span{
+                        margin-left: 15px;
+                        font-size: 23px;
+                        color: rgb(69, 69, 69) !important;
+                    }
+                }
+                .creatorInfo{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    margin-top: 20px;
+                    img{
+                        width:60px;
+                        border-radius: 100%;
+                    }
+                    #creator-name{
+                        font-size: 25px;
+                        font-weight: bolder;
+                        margin-bottom: -7px;
+                    }
+                    #stars{
+                        cursor: pointer;
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+        .description{
+            padding-top: 40px;
+            margin:auto;
+            font-size: 19px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .title{
+                font-size: 28px;
+                font-weight: 700;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            ul li::marker{
+                color: red;
+                font-size: 1.2em;
+            }
+            i{
+                color: red;
+            }
+        }
+        .book{
+            margin-top: 50px !important;
+            margin-bottom: 50px !important;
+            border: 2px solid rgb(40, 40, 40);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10em;
+            flex-wrap: wrap;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+            .want{
+                width: 13em;
+            }
+            .location{
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                i{
+                    margin-right: 10px;
+                    font-size: 40px;
+                }
+                p{
+                    height: 27px;
+                }
+            }
+            .log{
+                i,span{
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width for vertical scrollbar */
+  }
+  
+  /* Style the scrollbar track (background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background for track */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the thumb */
+  }
+  
+  /* Change the thumb color on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #069636; /* Darker color for thumb when hovered */
+  }
+  .fa-square-check{
+    margin-left: 30px;
+  }
