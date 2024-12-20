@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:radial-gradient(circle, #E0E0E0, #C0C0C0, #808080);
+    ;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('/path-to-font/digital-7-mono.woff2') format('woff2'),
+         url('/path-to-font/digital-7-mono.woff') format('woff');
+}
+
+@keyframes slideRotate{
+    0%{
+        left: 33px;
+    }
+    100%{
+        left: -100%;
+        transform: rotate(-360deg);
+    }
+}
+@keyframes slideRotateBack{
+    0%{
+        left: -100%;
+        transform: rotate(-360deg);
+    }
+    100%{
+        left: 35px;
+        transform: rotate(0deg);
+    }
+}
+
+.box {
+    width: 570px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden; 
+    background-color: transparent; 
+}
+.digital{
+    position: absolute;
+    position: relative;
+    width: 450px;
+    height: 300px;
+    background-color: #558e7f;
+    border-radius: 15px;
+    z-index: -1;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 3px;
+}
+.d-none{
+    display: none;
+}
+.screen{
+    background-color: #000000;
+    width: 360px;
+    height: 230px;
+    font-size: 60px;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Orbitron';
+    box-shadow: inset 0px 0px 10px 3px;
+    border-radius: 10px;
+    #Date{
+        margin-top: 20px;
+        font-size: 20px;
+        position: absolute;
+        left: 30px;
+        bottom: 13px;
+    }
+}
+.butons{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#change,#onOff{
+    width: 24px;
+    height: 24px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(208, 5, 5);
+    box-shadow: inset 0px 0px 3px 2px black;
+    margin-right: -20px;
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+#onOff{
+    background-color: aliceblue;
+    color: black;
+}
+.analog{
+    width: 500px;
+    height: 500px;
+    border-radius: 100em;
+    border: 10px solid black;
+    position: relative;
+    position: absolute;
+    
+    box-shadow: 0px 0px 16px 1px inset;
+    box-shadow: 10px 5px 20px 0px;
+    z-index: 1;
+    cursor: pointer;
+    background:white url("/assets/Photos/signature\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: -10px;
+    background-size: 46em;
+}
+.analogForward{
+    animation: slideRotate 2.5s forwards;
+}
+.analogBack{
+    animation: slideRotateBack 2.5s forwards;
+}
+
+.minute-Hand,
+.second-Hand,
+.hour-Hand{
+    width: 180px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    background-color: black;
+    transform-origin:0% 50% ;
+    transform: rotate(-90deg);
+}
+.hour-Hand{
+    width: 130px;
+}
+.second-Hand{
+    background-color: red;
+    height: 2px;
+}
+
+.buton{
+    text-align: center;
+    width: 300px;
+    img{
+        box-shadow: 0px 0px 10px 1px;
+        border-radius: 100rem;
+    }
+}
+.buton:active{
+    transform: scale(0.9);
+}
+.dot{
+    border-radius: 100em;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    background-color: black;
+    transform: translate(-50%,-40%);
+}
+.numbers{
+    font-size: 34px;
+    font-weight: 600;
+    position: absolute;
+    color: rgb(46, 40, 33);
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 900;
+}
+#n12{top: 10px;left: 50%;transform:translate(-50%)}
+#n6{bottom: 10px;left: 50%;transform:translate(-50%)}
+#n3{top: 50%;right: 10px; transform:translate(0%,-50%)}
+#n9{top: 50%;left: 10px; transform:translate(0%,-50%)}
+#n11{top:9%;left: 26%;}
+#n1{top:9%;right: 26%;}
+#n5{bottom:9%;right: 26%;}
+#n7{bottom:9%;left: 26%;}
+#n10{top:26%;left:9%;}
+#n8{bottom:26%;left:9%;}
+#n4{bottom:26%;right:9%;}
+#n2{top:26%;right:9%;}
