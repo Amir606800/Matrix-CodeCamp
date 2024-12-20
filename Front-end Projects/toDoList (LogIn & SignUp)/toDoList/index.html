@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <a href="../loginPart/login.html" style="text-decoration: none;" id="ll"><button id="LogButton">Login</button></a>
+    <div class="main-box">
+        <div id="welcome"></div>
+        <div class="head" style="text-align: start;">Your ToDo list:</div>
+        <form class="search-cnt">
+            <input type="text" id="search" placeholder="Add your new todo"><button id="add">+</button>
+        </form>
+        <div id="alert"></div>
+        <div class="list">
+           
+        </div>
+        <div class="footer"><p id="Count">You have 0 pending tasks</p><button id="clear">Clear All</button></div>
+    </div>
+    <button type="button" class="lightToggler">
+        <svg id="lightMode" xmlns="http://www.w3.org/2000/svg" style="color:black;" width="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>    
+    </button>
+    <button type="button" class="nightToggler">
+        <svg id="nightMode" xmlns="http://www.w3.org/2000/svg" width="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./Assets/JS/script.js"></script>
+</body>
+</html> 

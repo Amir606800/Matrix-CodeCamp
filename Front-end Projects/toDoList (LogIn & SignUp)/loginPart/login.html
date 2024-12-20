@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./assets/CSS/logRegis.css">
+</head>
+<body>
+    <div class="main-area">
+        <div class="main-box">
+            <div class="all">
+            <h1>Log In</h1>
+            <form method="post">
+                <div class="email">
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                    <p class="alert " id="alertEmail"></p>
+                </div>
+                <div class="Pass-box">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <img  src="./assets/images/closed-eyes.svg" id="eye" width="35px">
+                    <p class="alert" id="alertPassw"></p>
+                    <p id="forgot">Forgot your <a href="#">password</a> ?</p>
+                </div> 
+
+                <button id="login">Log In</button>
+            </form>
+            <hr>
+            <p style="font-size: 10px;text-align:center" id="link-sign">Do not have an account? <a>Register.</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/JS/login.js"></script>
+    <script src="./assets/JS/Data.js"></script>
+</body>
+</html>

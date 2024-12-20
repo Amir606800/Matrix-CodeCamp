@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/CSS/logRegis.css">
+</head>
+<body>
+    <div class="main-area">
+        <div class="main-box">
+            <div class="all2">
+            <h1>Register</h1>
+            <form >
+                <div class="user">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <p class="alert" id="alertUser"></p>
+                </div>
+                <div class="email">
+                    <input type="email" id="email" placeholder="Enter your Email" required>
+                    <p class="alert " id="alertEmail"></p>
+                </div>
+                <div class="Pass-box">
+                    <input type="password" class="password1" placeholder="Enter your password" required>
+                    <img  src="./assets/images/closed-eyes.svg" class="eye1" width="35px">
+                    
+                </div> 
+                <div class="Pass-box">
+                    <input type="password" class="password2" placeholder="Repeat your password" required>
+                    <img  src="./assets/images/closed-eyes.svg" class="eye2" width="35px">
+                    <p class="alert" id="alertPassw1"></p>
+                </div> 
+
+                <button id="login">Register</button>
+            </form>
+            <hr>
+            <p style="font-size: 10px;text-align:center" id="link-sign">Already have an account? <a>Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/JS/signUp.js"></script>
+    <script src="./assets/JS/Data.js"></script>
+
+</body>
+</html>
