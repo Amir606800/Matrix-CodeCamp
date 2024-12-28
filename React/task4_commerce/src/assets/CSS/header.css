@@ -1,0 +1,178 @@
+
+.header{
+    
+    .ad-head{
+        
+        background-color: #634b9f;
+        margin-top: -5px;
+        height: fit-content;
+        .inner-ad-head{
+            font-size: small;
+        }
+    }
+    .quick-menu{
+        width: 100vw;
+        margin-bottom: -18px;
+        .left{
+            font-size: 13px;
+
+            .splitter{
+                width: 1px;
+                
+                background-color: rgb(236, 236, 236);
+                border-radius: 20px;
+            }
+            
+            
+        }
+        .right{
+            font-size: 14px;
+            .feat-box-lang,.feat-box-curr{
+                position: relative;
+                
+                .langs{
+                overflow: hidden;
+                width: 3.5em;
+                padding: 1px;
+                text-align: center;
+                padding-top: 10px;
+                position: absolute;
+                background-color: white;
+                left: -11%;
+                box-shadow: 0px 3px 10px;
+                transition: .5s;
+                transform: scaleY(0) translate(0%,-100%);
+                z-index: 100000;
+                
+            }}
+            .feat-box-lang:hover{
+                .langs{
+                    
+                    transform: scaleY(1);
+                }
+            }
+            .feat-box-curr:hover{
+                .langs{
+                    transform: scaleY(1);
+                }
+            }
+        }
+    }
+    .search-head{
+       
+        background-color: white;
+        padding-top: 2px;
+        img{
+            width: 9em;
+        }
+        .location{
+            width: 7em;
+            height: 3.5em;
+            .text{
+                font-size: smaller;
+                margin-top: -8px;
+            }
+            .icon-loc{
+                font-size: 36px !important;
+                background-color: rgb(242, 242, 242);
+                border-radius: 100%;
+                padding: 5px;
+                transition: all .4s;
+            }
+            .icon-loc:hover{
+                background-color: rgb(215, 215, 215);
+            }
+        }
+        .search{
+            width: 53.6em;
+            margin-left: 15px;
+            .search-text{
+                width: 100%;
+                height: 45px;
+                background-color: #f3f4f6;
+                border: none;
+                border-radius: 10px;
+                padding-left: 25px;
+            }
+            .lupa{
+                right:0px;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .specials{
+            width: 6em;
+            margin-left: 2em;
+            font-weight: bold;
+            .spec-el{
+                height: 3em;
+                cursor: pointer;
+            }
+            p{
+                font-size: 12px;
+            }
+            .icons-spec{
+                font-size: 25px !important;
+                
+            }
+        }
+    }
+    .navigator{
+        margin-top: -2px;
+        margin-bottom: -33px;
+        .left{
+            .nav-item{
+                padding-bottom: 12px;
+                cursor: pointer;
+            }
+            .active{
+                color: #5f547e;
+                border-bottom: 3px solid #5f547e;
+            }
+        }
+        .right{
+            align-items: center;
+            height: 100%;
+            .Sale{
+                font-size: 11px;
+                background-color: rgb(223, 0, 0);
+                color: white;
+                padding: 4px;
+                padding-top: 1px !important;
+                border-radius: 6px;
+            }
+        }
+    }
+    .direction{
+        div{
+            font-size: 13px;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.tag{
+    cursor: pointer;
+}
+.gray{
+    color: rgb(232, 232, 232);
+}
+.hov{
+    color: rgb(88, 88, 88);
+    transition: .2s;
+    cursor: pointer;
+}
+.hov:hover{
+    color: black !important;  
+}
+
+.container-fluid{
+    width: 88em !important;
+}
+@media (max-width:1399px) {
+    .container-fluid{
+        width: 88% !important;
+    }
+}

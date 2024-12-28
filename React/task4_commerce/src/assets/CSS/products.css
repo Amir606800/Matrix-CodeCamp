@@ -1,0 +1,75 @@
+.Products{
+    background-color: white;
+
+    width: 80%;
+    .head-product{
+        background: url("https://klbtheme.com/grogin/wp-content/uploads/2023/11/banner-33.jpg");
+        background-size: 73em;
+        background-repeat: no-repeat;
+        background-position-x: -130px;
+        height: 19em;
+        .only-this{
+            font-size: 13px;
+            width: fit-content;
+            padding: 5px;
+            background-color: #feeed6;
+            color: #98573f;
+        }
+        .treasure{
+            width: 50%;
+            font-weight: bolder;
+        }
+        .under-treasure{
+            width: 40%;
+        }
+        button{
+            font-size: 13px;
+        }
+    }
+    .middle-splitter{
+        height: 60px;
+        background-color: #f3f4f6;
+        .criteria,.display{
+            background: none;
+            border: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+        .icon{
+            font-size: 24px;
+        }
+    }
+
+    .list{
+        max-height: 56em;
+        overflow-y: scroll;
+        background-color: white;
+
+        .item{
+            position: relative;
+            img{
+                object-fit: contain;
+                width: 12em;
+                height: 12em;
+                mix-blend-mode: multiply;
+            }
+            .discount{
+                background-color: #da2723;
+                color: white;
+                font-size: 12px;
+                font-weight: 700;
+                padding: 4px;
+            }
+        }
+    }
+    
+}
+@media (max-width:1200px){
+    .Products{
+        width: 100%;
+    }
+}
+
+.yellow-star{
+    color: #fac916;
+}

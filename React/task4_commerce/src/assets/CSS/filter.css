@@ -1,0 +1,58 @@
+.Filter{
+    width: 25%;
+    form{
+        .prices{
+            #minPrice,#maxPrice{
+                width: 7em;
+                font-size: 20px;
+                border-radius: 4px;
+                border: 1px solid rgb(190, 190, 190);
+            }
+            .analog{
+                #rangeInput{
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+    .checkes{
+        .list-unstyled{
+            height: 15em;
+            overflow: scroll;
+            li{
+                font-family:  Arial;
+            }
+        }
+        .list-unstyled::-webkit-scrollbar{
+            display: none;
+        }
+
+    }
+}
+.custom-range {
+    -webkit-appearance: none; /* Remove default styling on Webkit browsers */
+    -moz-appearance: none;    /* Remove default styling on Firefox */
+    appearance: none;         /* Remove default styling for other browsers */
+    width: 100%;              /* Full width */
+    height: 4px;              /* Set the height of the range */
+    background: #7b7b7b;         /* Set the inactive track color to light gray */
+    border-radius: 5px;       /* Optional: gives rounded corners */
+                /* Remove outline */
+  }
+
+  
+
+
+
+  /* Style the range thumb */
+  .custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;              /* Width of the thumb */
+    height: 20px;             /* Height of the thumb */
+    background: rgb(0, 0, 0);        /* Set thumb color to white */
+    border-radius: 50%;       /* Make the thumb round */
+    cursor: pointer;          /* Change cursor to pointer */
+  }
+
