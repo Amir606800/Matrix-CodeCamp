@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.Head{
+    background: none;
+    .container{
+        height: 100px;
+        .logo{
+            width: 11em;
+        }
+        .theme{
+            #check-theme{
+                display: none;
+            }
+            .theme-sun,.theme-mon{
+                z-index: 99;
+            }
+            .theme-sun{
+                color: white;
+            }
+            .theme-btn{
+                display: flex;
+                gap: 25px;
+                border: 2px solid;
+                border-radius: 30px;
+                padding: 10px;
+                font-size: 22px;
+                background-color: rgba(240, 248, 255, 0.016);
+                position: relative;
+            }
+            .theme-btn::after{
+                content: "";
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                border-radius: 100%;
+                background-color: aliceblue;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%,-50%);
+                transition: all .5s;
+            }
+            
+            .theme-btn:checked ~ .theme-btn::after{
+                left: 75%;
+                background-color: rgb(18, 18, 18);
+            }
+        }
+        
+        .splitter{
+            width: 2px;
+            height: 3em;
+            background-color: rgb(148, 148, 148);
+        }
+        .hire{
+            .hire-btn{
+                height: 100%;
+                font-size: 24px;
+            }
+        }
+        .bars{
+            font-size: 38px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
