@@ -1,0 +1,33 @@
+.home{
+    @include center();
+    height: 35em;
+    background-image: url("https://creativemela.com/themeforest_html/Fresh_Vial/demo/freeshvila/images/bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+    .inner{
+        width: 63em;
+        padding: 30px;
+        justify-content: start;
+        display: flex;
+        .inner2{
+            @include column();
+        }
+        .head{
+            display: flex;
+            flex-direction: column;
+            
+            @include title();
+        }
+        .subtitle{
+            @include subtitle();
+        }
+        button{
+            @include buttons();
+        }
+        button:hover{
+            @include button_hover();
+        }
+    }
+}

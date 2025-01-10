@@ -1,0 +1,105 @@
+@import "mixin";
+@import "home";
+@import "header";
+@import "footer";
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.about {
+  @include center();
+  flex-direction: column;
+  .Head {
+    @include title();
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .Head::after {
+    content: " ";
+    width: 100px;
+    height: 5px;
+    background-color: blue;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .context {
+    @include subtitle();
+  }
+  .image {
+    margin-top: 50px;
+  }
+}
+.contact {
+  @include center();
+  max-width: 80em;
+  .head {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 20px;
+  }
+  .left {
+    width: 80%;
+
+    .top {
+      display: flex;
+      gap: 50px;
+      div {
+        width: 44%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input {
+        width: 100%;
+        border: 1px solid rgb(194, 194, 194);
+        font-size: x-large;
+        padding: 5px;
+        padding-left: 10px;
+      }
+    }
+    .bot {
+      margin-top: 20px;
+      label {
+        margin-bottom: -10px;
+      }
+      width: 100%;
+      @include column();
+      align-items: start;
+      #textarea {
+        max-width: 94%;
+        max-height: 7em;
+        font-size: 24px;
+      }
+    }
+    #subbit {
+      margin-top: 30px;
+      border-radius: 10px !important;
+      @include buttons();
+    }
+    #subbit:hover {
+      @include button_hover();
+    }
+  }
+  .right {
+    width: 20%;
+    padding: 0;
+    margin: 0;
+    margin-top: -170px !important;
+    @include column();
+    align-items: start;
+    margin: 0;
+    .feats-contact {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
