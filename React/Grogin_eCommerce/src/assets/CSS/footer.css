@@ -1,0 +1,110 @@
+.Footer{
+    height: 43em;
+    margin-top: 2em;
+    padding: 4em;
+    background-color: #f3f4f6;
+    .top{
+        margin-bottom: 50px;
+        .join{
+            width: 30%;
+            transform: scale(0.9);
+        }
+        .yazilar{
+            p{
+                font-size: 11px;
+                margin-top: 3px;
+            }
+        }
+        .email-footer{
+            width: 25em;
+            height: 3em;
+            input{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                padding-left: 20px;
+            }
+            button{
+                height: 100%;
+            }
+            
+        }
+        
+    }
+    .mid{
+        margin-top: 50px;
+        font-size: 13px;
+        
+        .head{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .col{
+            
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+            
+        }
+        .foot-icons{
+            font-size: 3.3em !important;
+            
+        }
+        .play-store,.app-store{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            img{
+                width: 130px;
+                margin-top: -20px;
+            }
+            p{
+                font-size: small;
+            }
+        }
+        .social{
+            .apps{
+                display: flex;
+                gap: 10px;
+                .social-icons{
+                font-size: 39px;
+                padding: 7px;
+                background-color: white;
+                border-radius: 7px;
+                transition: .5s;
+                cursor: pointer;
+                }
+                .face:hover{
+                    background-color: #007bff;
+                    color: white !important;
+                }
+                .insta:hover{
+                    background-color: #dc3545;
+                    color: white !important;
+                }
+                .twit:hover{
+                    background-color: #17a2b8;
+                    color: white !important;
+                }
+                .link:hover{
+                    background-color: #007bff;
+                    color: white !important;
+                }
+            }
+        }
+    }
+    .botom{
+        font-size: 14px;
+    }
+}
+
+.custom-violet {
+    background-color: #8a2be2; /* Violet */
+    color: white;
+}
+.custom-violet:hover{
+    background-color: #5f19a1; /* Violet */
+    color: white;
+}
